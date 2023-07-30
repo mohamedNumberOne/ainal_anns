@@ -1,0 +1,23 @@
+:root {
+  --rouge:  #ff1908 ;
+  --violet: #7f2082;
+  --bleu: #123274;
+  --bciel : #00aff4 ;
+  --degrade :linear-gradient(var(--violet), var(--bciel)); ;
+
+}
+
+
+@font-face {
+  font-family: "play";
+  src: url("Montserrat-Medium.ttf");
+}
+
+.footer {
+  margin-top: 100px !important;
+}
+
+.degrade
+ {
+    background-image : var(--degrade) !important ;
+ }

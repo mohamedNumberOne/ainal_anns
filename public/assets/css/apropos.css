@@ -1,0 +1,166 @@
+/* data-aos="fade-right"  */
+.apropos {
+  position: relative;
+  top: 100px;
+}
+
+body {
+  background-image: url("../img/bg4.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 20px 10px;
+  border-radius: 10px;
+  width: 500px;
+  margin: auto;
+  transition: box-shadow 0.5s;
+}
+
+h1:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--bleu);
+}
+
+.text {
+  line-height: 22px;
+  background-color: var(--bleu);
+  box-shadow: 0 0 5px white;
+  padding: 10px 10px 10px 150px;
+  padding-top: 20px;
+  border-radius: 10px;
+  color: white;
+  border-top-right-radius: 100px;
+  transition: background 1s;
+  position: relative;
+  width: 90%;
+  margin:auto;
+  
+}
+
+.text:hover {
+  background-color: var(--violet);
+}
+
+.text::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: var(--violet);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.img-float {
+  float: left;
+  display: inline-block;
+  margin: 5px;
+}
+
+.text::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: var(--violet);
+  position: absolute;
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  border-radius: auto;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.text:hover::before,
+.text:hover::after {
+  background-color: var(--bciel);
+}
+
+.apropos img {
+  width: 48%;
+  border-radius: 10px;
+  border-bottom-left-radius: 100px;
+  box-shadow: 0 0 12px white;
+  transition: 0.5s;
+  bottom: 0;
+  position: relative;
+  transition: 0.7s !important;
+  margin: 30px !important;
+ 
+}
+
+.div-apropos {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 12px #eee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .apropos img,
+  .text {
+     
+    margin: auto;
+ 
+   
+  }
+
+  .apropos img {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+   
+  .apropos img {
+    width: 100%;
+    display:  block;
+    float: none;
+    margin: 2px  !important;
+  
+  }
+
+  .text {
+    padding-left: 10px;
+    padding-bottom: 50px;
+  }
+  
+}
+
+
+@media screen and (max-width: 500px) {
+
+  h1 {
+    width: auto;
+  }
+
+}
+
+
+.spot {
+  width: 80%;
+  margin: auto;
+}
+
+.spot video {
+  width: 100%;
+}
+
+ 
